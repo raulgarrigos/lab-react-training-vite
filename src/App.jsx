@@ -1,6 +1,7 @@
 import "./App.css";
 import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
+import DriverCard from "./components/DriverCard";
 import Greetings from "./components/Greetings";
 import IdCard from "./components/IdCard";
 import Random from "./components/Random";
@@ -12,7 +13,7 @@ function App() {
       <h1> LAB | React Training</h1>
 
       {/* // Iteration 1 */}
-      <h3>IdCard</h3>
+      <h2>IdCard</h2>
 
       <IdCard
         lastName="Doe"
@@ -33,25 +34,25 @@ function App() {
       />
 
       {/* // Iteration 2 */}
-      <h3>Greetings</h3>
+      <h2>Greetings</h2>
 
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
 
       {/* // Iteration 3 */}
-      <h3>Random</h3>
+      <h2>Random</h2>
 
       <Random min={1} max={6} />
       <Random min={1} max={100} />
 
       {/* // Iteration 4 */}
-      <h3>BoxColor</h3>
+      <h2>BoxColor</h2>
 
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
 
       {/* // Iteration 5 */}
-      <h3>CreditCard</h3>
+      <h2>CreditCard</h2>
 
       <CreditCard
         type={"Visa"}
@@ -87,7 +88,7 @@ function App() {
       />
 
       {/* // Iteration 6 */}
-      <h3>Rating</h3>
+      <h2>Rating</h2>
 
       <Rating>0</Rating>
       <Rating>1.49</Rating>
@@ -95,6 +96,29 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      {/* // Iteration 7 */}
+      <h2>DriverCard</h2>
+
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: "Toyota Corolla Altis",
+          licensePlate: "CO42DE",
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: "Audi A3",
+          licensePlate: "BE33ER",
+        }}
+      />
     </div>
   );
 }
