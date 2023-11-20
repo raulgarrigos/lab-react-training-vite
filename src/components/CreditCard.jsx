@@ -1,3 +1,6 @@
+import visaImage from "../assets/images/visa.png";
+import mastercardImage from "../assets/images/master-card.svg";
+
 function CreditCard(props) {
   const cardStyles = {
     backgroundColor: props.bgColor,
@@ -16,17 +19,44 @@ function CreditCard(props) {
 
   const formattedNumber = maskedNumber.join("");
 
-  return (
-    <div style={cardStyles}>
-      <p className="type">{props.type}</p>
-      <p className="number">{formattedNumber}</p>
-      <p className="expire">
-        Expires {props.expirationMonth}/{props.expirationYear}
-      </p>
-      <p className="bank">{props.bank}</p>
-      <p className="owner">{props.owner}</p>
-    </div>
-  );
+  if (props.type === "Visa") {
+    return (
+      <div style={cardStyles} className="creditCard">
+        <img src={visaImage} alt={props.type} width={50} className="image" />
+        <p className="number">{formattedNumber}</p>
+
+        <div className="expireBank">
+          <span className="expire">
+            Expires {props.expirationMonth}/{props.expirationYear}
+          </span>
+          <span className="bank">{props.bank}</span>
+        </div>
+
+        <p className="owner">{props.owner}</p>
+      </div>
+    );
+  } else {
+    return (
+      <div style={cardStyles} className="creditCard">
+        <img
+          src={mastercardImage}
+          alt={props.type}
+          width={35}
+          className="image"
+        />
+        <p className="number">{formattedNumber}</p>
+
+        <div className="expireBank">
+          <span className="expire">
+            Expires {props.expirationMonth}/{props.expirationYear}
+          </span>
+          <span className="bank">{props.bank}</span>
+        </div>
+
+        <p className="owner">{props.owner}</p>
+      </div>
+    );
+  }
 }
 
 export default CreditCard;

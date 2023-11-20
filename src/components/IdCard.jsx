@@ -1,7 +1,7 @@
 function IdCard(props) {
   console.log(props);
   return (
-    <div>
+    <div className="idCard">
       <p>
         <strong>First Name: </strong>
         {props.firstName}

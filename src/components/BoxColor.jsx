@@ -4,7 +4,7 @@ function BoxColor(props) {
   };
 
   return (
-    <div style={divStyle}>
+    <div style={divStyle} className="boxColor">
       <p>
         rgb({props.r},{props.g},{props.b})
       </p>

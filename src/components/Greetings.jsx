@@ -1,12 +1,12 @@
 function Greetings(props) {
   if (props.lang === "en") {
-    return <div>Hello {props.children}</div>;
+    return <div className="greetings">Hello {props.children}</div>;
   } else if (props.lang === "fr") {
-    return <div>Bonjour {props.children}</div>;
+    return <div className="greetings">Bonjour {props.children}</div>;
   } else if (props.lang === "de") {
-    return <div>Hallo {props.children}</div>;
+    return <div className="greetings">Hallo {props.children}</div>;
   } else if (props.lang === "es") {
-    return <div>Hola {props.children}</div>;
+    return <div className="greetings">Hola {props.children}</div>;
   }
 }
 

@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  margin: 5px;
 }
 
 .App-logo {
@@ -35,4 +35,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.idCard {
+  border: 1px solid;
+  margin: 10px;
+}
+
+.idCard p {
+  margin: 5px;
+}
+
+.greetings {
+  border: 1px solid;
+  margin: 10px;
+  padding: 5px;
+}
+
+.random {
+  border: 1px solid;
+  margin: 10px;
+  padding: 5px;
+}
+
+.boxColor {
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.creditCard {
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.creditCard .image {
+  display: block;
+  margin-left: auto;
+}
+
+.creditCard .number {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.creditCard .bank {
+  margin-left: 20px;
+  padding: 0px;
 }

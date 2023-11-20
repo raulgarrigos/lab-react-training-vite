@@ -3,7 +3,7 @@ function Random(props) {
     Math.random() * (props.max - props.min) + props.min
   );
   return (
-    <div>
+    <div className="random">
       Random value between {props.min} and {props.max} {"=>"} {result}
     </div>
   );
