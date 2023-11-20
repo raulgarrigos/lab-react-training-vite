@@ -4,7 +4,7 @@ function IdCard(props) {
     <div>
       <p>
         <strong>First Name: </strong>
-        {props.firstName}{" "}
+        {props.firstName}
       </p>
       <p>
         <strong>Last Name: </strong>
