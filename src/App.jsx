@@ -9,6 +9,7 @@ import IdCard from "./components/IdCard";
 import LikeButton from "./components/LikeButton";
 import Random from "./components/Random";
 import Rating from "./components/Rating";
+import Carousel from "./components/Carousel";
 
 import catImage from "./assets/images/cat.jpg";
 import catGlasses from "./assets/images/cat-glasses.jpg";
@@ -137,6 +138,17 @@ function App() {
       {/* // Iteration 10 */}
       <h2>Dice</h2>
       <Dice />
+
+      {/* // Iteration 11 */}
+      <h2>Carousel</h2>
+      <Carousel
+        images={[
+          "https://randomuser.me/api/portraits/women/1.jpg",
+          "https://randomuser.me/api/portraits/men/1.jpg",
+          "https://randomuser.me/api/portraits/women/2.jpg",
+          "https://randomuser.me/api/portraits/men/2.jpg",
+        ]}
+      />
     </div>
   );
 }
