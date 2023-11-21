@@ -1,12 +1,17 @@
 import "./App.css";
 import BoxColor from "./components/BoxColor";
+import ClickablePicture from "./components/ClickablePicture";
 import CreditCard from "./components/CreditCard";
+import Dice from "./components/Dice";
 import DriverCard from "./components/DriverCard";
 import Greetings from "./components/Greetings";
 import IdCard from "./components/IdCard";
 import LikeButton from "./components/LikeButton";
 import Random from "./components/Random";
 import Rating from "./components/Rating";
+
+import catImage from "./assets/images/cat.jpg";
+import catGlasses from "./assets/images/cat-glasses.jpg";
 
 function App() {
   return (
@@ -122,7 +127,15 @@ function App() {
       />
 
       {/* // Iteration 8 */}
+      <h2>Like Button</h2>
       <LikeButton />
+
+      {/* // Iteration 9 */}
+      <h2>Clickable Image</h2>
+      <ClickablePicture img={catImage} imgClicked={catGlasses} />
+
+      {/* // Iteration 10 */}
+      <Dice />
     </div>
   );
 }
