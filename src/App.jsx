@@ -135,6 +135,7 @@ function App() {
       <ClickablePicture img={catImage} imgClicked={catGlasses} />
 
       {/* // Iteration 10 */}
+      <h2>Dice</h2>
       <Dice />
     </div>
   );
