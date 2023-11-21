@@ -3,6 +3,7 @@ function IdCard(props) {
   return (
     <div className="idCard">
       <p>
+        <img src={props.picture} alt={props.lastName} />
         <strong>First Name: </strong>
         {props.firstName}
       </p>

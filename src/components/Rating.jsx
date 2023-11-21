@@ -1,5 +1,5 @@
 function Rating(props) {
-  const roundedValue = Math.ceil(props.children);
+  const roundedValue = Math.round(props.children);
 
   if (roundedValue >= 0 && roundedValue < 1) {
     return <div>☆☆☆☆☆</div>;
@@ -15,5 +15,15 @@ function Rating(props) {
     return <div>★★★★★</div>;
   }
 }
+
+// const number = Math.round(props.children);
+//   const starRatingUp = "★".repeat(number);
+//   const starRatingDown = "☆".repeat(5 - number);
+//   return (
+//     <div>
+//       {starRatingUp}
+//       {starRatingDown}
+//     </div>
+//   );
 
 export default Rating;
